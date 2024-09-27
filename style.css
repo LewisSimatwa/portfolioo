@@ -1,0 +1,213 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: Cambria, Cochin, Georgia, Times,'Times New Roman', serif;*/
+    font-family: 'Karma';
+    font-size: 16px;
+    background-color: rgb(6, 10, 18);
+    color: white;
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for background and text color */
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(to left, #ff0000, #008cff, #000000, #ff0000, #ff0000, #008cff, #000000, #ff0000, #008cff, #000000 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hello{
+    font-size: 17px;
+    font-weight: bold;
+    background: linear-gradient(to left, #ff0000, #008cff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.nav a {
+    color: white; /* Default color for dark mode */
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: rgb(146, 166, 232);
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.toggle-button {
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modeIcon {
+    width: 30px; 
+    height: 30px; 
+    transition: opacity 0.3s ease; /* Smooth transition for icon change */
+}
+
+img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+#Home {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-section, .skills-section, .certificates-section {
+    background-color: rgba(10, 15, 25, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h1, .skills-section h1, .certificates-section h1 {
+    text-align: center;
+    color: #ff0000;
+}
+
+.skills-list, .certificates-list {
+    list-style-type: none;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+
+.no style{
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+
+.skills-list li, .certificates-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background: linear-gradient(to left, #ff0000, #002aff);
+    border-radius: 5px;
+    transition: transform 0.3s;
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+
+.certificates-list li:hover {
+    transform: scale(1.05);
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .nav {
+    background-color: #f0f0f0; /* Light background for the nav in light mode */
+}
+
+.light-mode .nav a {
+    color: black; /* Change text color to black in light mode */
+}
+
+.light-mode .about-section,
+.light-mode .skills-section,
+.light-mode .certificates-section {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.light-mode .skills-list li,
+.light-mode .certificates-list li {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact h1 {
+    color: #ff0000;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ff0000; /* Highlight border on focus */
+}
+
+button {
+    background-color: #ff0000; /* Main button color */
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Increased padding for better appearance */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+    transition: background-color 0.3s, transform 0.2s; /* Added transition for transform */
+}
+
+button:hover {
+    background-color: #e60000; /* Darken button on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+footer{
+    text-align: center;
+}
